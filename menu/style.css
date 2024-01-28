@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial; 
+}
+header {
+    background: #778cb6;
+    padding: 15px 110px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 450;
+    margin-left: 35px;
+}
+nav a.active{
+    color: #d1cfe2;
+}
+section {
+    background: #323946;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
