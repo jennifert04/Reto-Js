@@ -18,7 +18,7 @@ body {
     padding: 20px;
   }
   
-  #inputBox{
+  #texto{
     width: 300px;
     padding: 6px;
     border: 3px solid #F4D03F;
@@ -28,7 +28,7 @@ body {
     font-size: 18px;
   }
   
-  #keyboard {
+  #teclado {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -36,7 +36,7 @@ body {
     margin-top: 20px;
   }
   
-  .key, #borrar, #entrar {
+  .numero, #borrar, #entrar {
     width: 100px;
     height: 100px;
     display: flex;
@@ -50,7 +50,7 @@ body {
     font-size: 18px;
   }
   
-  .key:hover {
+  .numero:hover {
     background-color: #d7f0f0;
   }
   

@@ -2,26 +2,26 @@ window.onload = init;
 
 let data = [0,1,2,3,4,5,6,7,8,9];
 
- const keyboard = document.getElementById("keyboard");
- const inputBox = document.getElementById("inputBox");
- const keys = keyboard.getElementsByClassName("key");
+const teclado = document.getElementById("teclado");
+const texto = document.getElementById("texto");
+const numeros = teclado.getElementsByClassName("numero");
 const borrar = document.getElementById("borrar");
 const entrar = document.getElementById("entrar");
 
 function init() {
   
-  keyboard.addEventListener("mouseenter", function() {
+  teclado.addEventListener("mouseenter", function() {
     desordenarNumeros();
     mostrarNumeros();
   });
 
-  keyboard.addEventListener("mouseleave", function() {
+  teclado.addEventListener("mouseleave", function() {
     ocultarNumeros();
   });
 
-  Array.from(keys).forEach(key => {
-    key.addEventListener("click", function() {
-      inputBox.value += key.getAttribute("data-value"); 
+  Array.from(numeros).forEach(numero => {
+    numero.addEventListener("click", function() {
+      texto.value += numero.getAttribute("data-value"); 
     });
   });
   
@@ -29,7 +29,7 @@ function init() {
   
   entrar.addEventListener("click", () =>{
     alert("Vous êtes bienvenu(e)");
-    inputBox.value = "";
+    texto.value = "";
   });
 };
 
@@ -37,23 +37,23 @@ function desordenarNumeros() {
     //const numeros = Array.from({ length: 10 }, (_, index) => index.toString());
     data.sort(() => Math.random() - 0.5);
 
-    Array.from(keys).forEach((key, index) => {
-      key.setAttribute("data-value", data[index]);
+    Array.from(numeros).forEach((numero, index) => {
+      numero.setAttribute("data-value", data[index]);
     });
   }
 
   function mostrarNumeros() {
-    Array.from(keys).forEach(key => {
-      key.textContent = key.getAttribute("data-value");
+    Array.from(numeros).forEach(numero => {
+      numero.textContent = numero.getAttribute("data-value");
     });
   }
 
   function ocultarNumeros() {
-    Array.from(keys).forEach(key => {
-      key.textContent = "*";
+    Array.from(numeros).forEach(numero => {
+      numero.textContent = "*";
     });
   }
 
   function borrarNumero(){
-    inputBox.value = inputBox.value.slice(0, -1);
+    texto.value = texto.value.slice(0, -1);
   }
