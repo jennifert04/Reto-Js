@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+.container{
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     background: #000;
     padding: 20px 110px;
@@ -13,7 +18,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .button-submit {
@@ -45,7 +49,6 @@ header {
     display: flex;
     flex-direction: column;
     background: #dadbf1;
-    max-width: 1400px;
     height: 60%;
     font-size: 40px;
     margin: 0 auto;
@@ -54,6 +57,56 @@ header {
     align-items: center;
     padding-top: 200px;
     padding-bottom: 115px;
+}
+.container6{
+    padding-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+
+.icono{
+    display: flex;
+    padding-right: 50px;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+}
+
+.texto{
+    position: relative;
+    padding: 0 1.5rem 0 0;
+    width: 90%;
+    color: #191a1b;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: inherit;
+
+}
+
+.descripcion{
+    padding-top: 18px;
+    font-size: 24px;
+    font-weight: 32px;
+    margin-bottom: 32px;
+
 }
 
 .search-box {
@@ -134,4 +187,79 @@ nav li {
 nav a {
     color: #000;
     text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    position: relative;
+}
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 150px;
+    padding-right: 90%;
+    color: white;
+    background-color: #000000;
+    font-family: 'GT America Standard', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: left;
+    
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column {
+    width: 80%;
+    flex: 30%;
+    margin-right: 0px;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+.container-footer a {
+    color: white;
+    display: block;
+}
+
+.legal{
+    margin-bottom: 30px;
+}
+
+strong{
+    color: #fff;
+}
+
+.contact-us{
+    color: #fff;
+}
+
+.footer-column-copyright {
+    font-size: 20px;
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+}
+
+.button-help{
+    position: absolute;
+    background-color: #4c5fd5 ;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold
 }
