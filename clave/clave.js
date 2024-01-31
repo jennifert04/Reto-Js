@@ -11,12 +11,12 @@ const entrar = document.getElementById("entrar");
 function init() {
   
   teclado.addEventListener("mouseenter", function() {
-    desordenarNumeros();
-    mostrarNumeros();
+    ocultarNumeros();
   });
 
   teclado.addEventListener("mouseleave", function() {
-    ocultarNumeros();
+    desordenarNumeros();
+    mostrarNumeros();
   });
 
   Array.from(numeros).forEach(numero => {
