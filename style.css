@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif; 
+    font-family: sans-serif;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
     margin-left: 10px;
 }
 
-.button-signin:hover{
+.button-signin:hover {
     background-color: #fff;
     color: #000;
 }
@@ -66,14 +66,52 @@ header {
     color: black;
     margin-top: 20px;
     border-radius: 5px;
-  }
-  
+}
+
 
 .logo {
     font-size: 25px;
     font-weight: 300px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.item-icon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.item-text {
+    position: relative;
+    padding: 0 1.5rem 0 0;
+    width: 100%;
+    color: #191a1b;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.item-desc {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.link{
+    font-size: 20px;
+    line-height: 28px;
+    color: #4C5FD5;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 nav {
