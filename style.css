@@ -18,6 +18,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: -100px; /* Inicia oculto */
+    transition: top 0.3s;
 }
 
 .button-submit {
